@@ -154,13 +154,15 @@ export const Projects: React.FC = () => {
                     </a>
 
                     <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => setSelectedProject(project)}
-                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-[#00f0ff] hover:text-white bg-[#00f0ff]/10 hover:bg-[#00f0ff]/20 border border-[#00f0ff]/30 transition-all cursor-pointer"
-                      >
-                        <ExternalLink className="w-3.5 h-3.5" />
-                        <span>Live Demo</span>
-                      </button>
+                      <a
+  href={project.liveUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold text-[#00f0ff] hover:text-white bg-[#00f0ff]/10 hover:bg-[#00f0ff]/20 border border-[#00f0ff]/30 transition-all cursor-pointer"
+>
+  <ExternalLink className="w-3.5 h-3.5" />
+  <span>Live Demo</span>
+</a>
                     </div>
                   </div>
                 </div>
